@@ -1,0 +1,14 @@
+.list-product{
+    display: flex;
+    gap: 24px
+}
+.card-box{
+    padding: 4px;
+    background-color: white;
+    box-shadow: 3px 0px 3px 0px #ccc;
+    border-radius: 4px;
+}
+.img-product{
+    width: 300px;
+    height: auto;
+}

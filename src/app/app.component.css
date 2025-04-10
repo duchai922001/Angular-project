@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products{
+    margin: 0 40px;
+}
+.title {
+    display: none;
+}
+.active {
+    display: block !important;
+}

@@ -1,0 +1,15 @@
+<div class="list-product">
+
+    <div class="card-box" *ngFor="let item of listProduct">
+        <img class="img-product" src={{item.image}}/>
+        <div class="info-product">
+            <p>{{item.name}}</p>
+            <p>Price: {{item.price | currencyPipe}}</p>
+            <p>{{item.description | truncate}}</p>
+    </div>
+        <div>
+            <button>Mua Ngay</button>
+            <button>Thêm vào giỏ</button>
+        </div>
+    </div>
+</div>
