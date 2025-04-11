@@ -1,7 +1,7 @@
 <div class="list-product">
 
-    <div class="card-box" *ngFor="let item of listProduct">
-        <img class="img-product" src={{item.image}}/>
+    <div class="card-box" *ngFor="let item of products">
+        <img class="img-product" [src]="item.image ? item.image : 'https://mucinmanhtai.com/wp-content/themes/BH-WebChuan-032320/assets/images/default-thumbnail-400.jpg'"/>
         <div class="info-product">
             <p>{{item.name}}</p>
             <p>Price: {{item.price | currencyPipe}}</p>

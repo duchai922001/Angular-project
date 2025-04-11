@@ -1,0 +1,19 @@
+<h2>Quản lý sản phẩm</h2>
+<button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
+<nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzCancelText="Cancel" nzOkText="Ok">
+    <ng-container *nzModalContent>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+
+            <input nz-input placeholder="Tên sản phẩm" [(ngModel)]="newProduct.name" />
+            <input nz-input placeholder="Giá sản phẩm" type="number" [(ngModel)]="newProduct.price" />
+            <input nz-input placeholder="Link ảnh" [(ngModel)]="newProduct.image" />
+            <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Chọn danh mục" [(ngModel)]="newProduct.category_id">
+                <nz-option *ngFor="let option of categoryOptions" 
+                [nzLabel]="option.label" 
+                [nzValue]="option.value">
+                </nz-option>
+              </nz-select>
+        </div>
+        
+    </ng-container>
+  </nz-modal>

@@ -31,6 +31,16 @@
 .navigate ul li:hover {
     color: blue
 }
+
+.navigate a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navigate a.active-link {
+    font-weight: bold;
+    color: #007bff;
+  }
 .right-header{
     flex: 1;
     display: flex;

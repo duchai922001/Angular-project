@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Thêm sản phẩm mới</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Tên sản phẩm</mat-label>
+    <input matInput [(ngModel)]="product.name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Giá</mat-label>
+    <input matInput type="number" [(ngModel)]="product.price" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Ảnh</mat-label>
+    <input matInput [(ngModel)]="product.image" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button  cdkFocusInitial>Ok</button>
+</mat-dialog-actions>

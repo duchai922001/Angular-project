@@ -1,0 +1,18 @@
+<div class="group-header">
+  <div class="logo" (click)="goHome()" style="cursor: pointer">
+    <img class="logo-image" src="assets/images/logo.jpg" />
+  </div>
+  <div class="navigate">
+    <ul>
+      <li *ngFor="let item of menuList">
+        <a [routerLink]="item.url" routerLinkActive="active-link">
+          {{ item.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="right-header">
+    <button class="btn-register">Đăng ký</button>
+    <button class="btn-login">Đăng nhập</button>
+  </div>
+</div>
